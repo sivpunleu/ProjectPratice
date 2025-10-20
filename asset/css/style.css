@@ -47,4 +47,99 @@
     --bs-dark-rgb: 33, 37, 41;
    }
 }
-/*  */
+/* user profile button !important */
+   .btn-user-profile {
+        width: 60px!important;
+        height: 60px!important;
+        padding: 0!important;
+        overflow: hidden!important;
+      }
+
+      .btn-user-profile .user-profile {
+        width: 100%!important;
+        height: 100%!important;
+        object-fit: cover!important;
+      }
+         nav .nav-link {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333333;
+      }
+      nav .nav-link:hover {
+        color: #6c63ff;
+      }
+      .dropdown-menu li a.dropdown-item {
+        font-size: 16px;
+        font-weight: 500;
+        color: #333333;
+      }
+      .dropdown-menu li a.dropdown-item:hover {
+        color: #6c63ff;
+        
+      }
+      /* Vehicle dropdown icons: right-aligned and muted color */
+      .dropdown-menu li a.dropdown-item {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        margin: 0 10px;
+      }
+      .dropdown-item i.fa {
+        font-size: 18px;
+        opacity: 0.75;
+        width: 25px;
+        text-align: right;
+      }
+      .dropdown-item span {
+        flex: 1 1 auto;
+      }
+      .btn-booking:hover {
+        background-color: #511313!important;
+      }
+      /* Footer styles */
+      .list-unstyled li a {
+        color: rgba(255,255,255,0.75);
+        text-decoration: none;
+      }
+      .list-unstyled li a:hover {
+        color: #2a27e8!important;
+        text-decoration: none;
+      }
+      .site-footer .footer-inner {
+        background: #000;
+        color: #fff;
+      }
+      .site-footer h4, .site-footer h5, .site-footer h6 {
+        color: #fff;
+      }
+      .site-footer .text-muted {
+        color: rgba(255,255,255,0.75) !important;
+      }
+      .site-footer .social-btn {
+        width: 44px;
+        height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid rgba(255,255,255,0.12);
+        color: #fff;
+        background: transparent;
+      }
+      .site-footer .footer-input {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.12);
+        color: #fff;
+        border-radius: 28px;
+        padding: 12px 20px;
+      }
+      .site-footer .footer-input::placeholder {
+        color: rgba(255,255,255,0.55);
+      }
+      .site-footer .btn-outline-light {
+        border-color: rgba(255,255,255,0.35);
+      }
+      @media (max-width: 991px) {
+        .site-footer .footer-inner { padding: 2rem; }
+      }
