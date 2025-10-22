@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="asset/css/style.css" />
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="asset/css/theme.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="asset/bootstrap-5.3.7/css/bootstrap.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- link css -->
+  <link rel="stylesheet" href="asset/css/car.css">
+  <!-- link animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>Document</title>
+  <style></style>
+</head>
+<!-- herobanner style -->
+<style>
+  .breadcrumb-item::before {
+    color: white !important;
+  }
+    /* Carousel indicator dots styled as primary-colored circles */
+    #carouselExampleIndicators .carousel-indicators {
+                      position: absolute;
+                      z-index: 10;
+                      bottom: 16px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      display: flex;
+                      gap: 8px;
+                      padding: 0;
+                      margin: 0;
+    }
+
+  #carouselExampleIndicators .carousel-indicators button {
+                      width: 12px;
+                      height: 12px;
+                      border-radius: 50%;
+                      background-color: var(--bs-primary, #744fff);
+                      opacity: 0.6;
+                      border: none;
+                      transition: transform .18s ease, opacity .18s ease, box-shadow .18s ease;
+  }
+   #carouselExampleIndicators .carousel-indicators button.active,
+   #carouselExampleIndicators .carousel-indicators button:focus {
+                      width: 14px;
+                      height: 14px;
+                      opacity: 1;
+                      box-shadow: 0 0 0 6px rgba(116, 79, 255, 0.12); /* subtle ring */
+    }
+  /* Remove default outline for mouse users but keep for keyboard accessibility */
+    #carouselExampleIndicators .carousel-indicators button:not(:focus-visible) {
+                      outline: none;
+    }
+                  
+</style>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom border-light sticky-top py-4 wow animate__slideInDown"
+    data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-name: slideInDown;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-end" href="index.html">
+        <img class="py-1 wow animate__zoomIn" data-wow-duration="1s" style="
+              width: 40px;
+              visibility: visible;
+              animation-duration: 1s;
+              animation-name: zoomIn;
+            " src="asset/img/logo-removebg.png" alt="logo" />
+        <span class="ms-2 fw-semibold fs-4">Rental <span class="text-puple">Vehicles</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Types of Vehicles
+            </a>
+            <ul class="dropdown-menu ">
+              <li>
+                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Motorbike</span>
+                  <i class="fa fa-bicycle text-muted" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Car</span>
+                  <i class="fa fa-car text-muted" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Van</span>
+                  <i class="fa fa-bus text-muted" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary px-4 py-2 rounded-pill text-capitalize position-relative btn-booking"
+              href="/booking-rental">book a rental
+              <span
+                class="badge pluss position-absolute top-0 end-0 translate-middle-y border border-1 bg-danger p-2 rounded-circle">
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- profile -->
+        <div class="dropdown ms-3">
+          <button class="btn btn-square btn-user-profile btn-outline-primary rounded-circle" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="user-profile rounded-circle img-fluid" src="asset/img/user/09.jpg" alt="profile"
+              style="width: 60px; height: 60px" />
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end mt-2">
+            <li>
+              <a class="dropdown-item d-flex justify-content-between align-items-center" href="/setting-info">Setting <i
+                  class="bi bi-gear float-end"></i></a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex justify-content-between align-items-center"
+                href="/notification">Notification <i class="bi bi-bell float-end"></i></a>
+            </li>
+            <li class="border-1 border-top border-secondary">
+              <a class="dropdown-item text-danger d-flex justify-content-between align-items-center" href="#logout"
+                role="button" data-bs-toggle="modal" data-bs-target="#logout">Log Out
+                <img width="16px" class="float-end mt-1" src="assets/images/png/logout.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <!-- START HEROBANNER  -->
+      <div class="herobanner">
+        <div class="title d-flex justify-content-center align-items-center flex-column" style="height:65vh;">
+          <h1 class="text-white fw-bolder animate__animated  animate__fadeInDown" style="font-size: 64px ;">Sedan Cars</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item animate__animated animate__fadeInUp  fs-5 fw-medium"><a
+                  class="breadcrumb-link text-white text-decoration-none" href="/index.html">Home</a></li>
+              <li class="breadcrumb-item  animate__animated animate__fadeInUp  fs-5 fw-medium"> 
+                <a href="car.html" class="breadcrumb-item animate__animated animate__fadeInUp text-decoration-none  activec fs-5  fw-medium text-white">Cars</a>
+              </li>
+         
+
+              <li class="breadcrumb-item animate__animated animate__fadeInUp  activec fs-5  fw-medium "
+                aria-current="page" style="color:#744fff;">Sedan</li>
+            </ol>
+          </nav>
+        </div>
+
+      </div>
+      <!-- HEROBANNER END -->
+      <!-- CONTIANs -->
+      <section class="mt-5">
+        <div class="row g-5 ">
+          <div class=" col-lg-4">
+          <div class="card position-sticky top-0 bg-transparent bg-secondary-subtle opacity-70 rounded-5 position-sticky py-3">
+            <div class="card-body p-5">
+              <p class=" d-flex justify-content-center align-items-center ">
+                <span class="fs-1 fw-bolder">$248</span>
+                /per Day
+              </p>
+              <hr class="border border-secondary my-4 opacity-25 border-1" style="color:aliceblue">
+              <div class="d-flex justify-content-between ">
+               <span class="text-secondary "><img src="asset/img/svg/icon-door.svg" alt="cardoor" class="me-2"> Doors</span>
+               <span class="text-secondary">4</span>
+              </div>
+              <div class="d-flex justify-content-between my-3 ">
+               <span class="text-secondary "><img src="asset/img/svg/icon-passengers.svg" alt="cardoor" class="me-2"> Panssengers</span>
+               <span class="text-secondary">2</span>
+              </div>
+              <div class="d-flex justify-content-between my-3 ">
+               <span class="text-secondary "><img src="asset/img/svg/icon-transmission.svg" alt="cardoor" class="me-2"> Transmission</span>
+               <span class="text-secondary">Auto</span>
+              </div>
+              <div class="d-flex justify-content-between my-3 ">
+               <span class="text-secondary "><img src="asset/img/svg/icon-age.svg" alt="cardoor" class="me-2"> Age</span>
+               <span class="text-secondary">6</span>
+              </div>
+               <div class="d-flex justify-content-between my-3 ">
+               <span class="text-secondary "><img src="asset/img/svg/icon-bags.svg" alt="cardoor" class="me-2"> Luggage</span>
+               <span class="text-secondary">1</span>
+              </div>
+              <div class="d-flex justify-content-between my-3 ">
+               <span class="text-secondary "><img src="asset/img/svg/icon-aircondition.svg" alt="cardoor" class="me-2">  Air Condition</span>
+               <span class="text-secondary">Yes</span>
+              </div>
+              <hr class="border border-secondary my-4 opacity-25 border-1" style="color:aliceblue">
+              
+              <!-- btn link to other page -->
+              <div class="d-flex  justify-content-center align-items-center my-3">
+                <a href="#" class="btn btn-book py-2 px-4 rounded-5 fw-bolder text-white" style="background-color: #744fff;">Book Now</a>
+                <span class="px-3">OR</span>
+                <a href="#" class="btn btn-contaxt "><i class="fa-solid fa-comment-dots"></i></a>
+              </div>
+
+            </div>
+
+          </div>  
+        </div>
+        <div class="col-xl-8">
+          <div class="col-lg-12">
+              <div class="card rounded-5">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                  
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+
+                  <div class="carousel-inner rounded-5">
+                    <div class="carousel-item active">
+                      <img src="asset/img/sedan/car-6969349_1280.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="asset/img/sedan/car-6969351_1280.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="asset/img/sedan/renault-2942017_1280.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="asset/img/sedan/renault-laguna-6978128_1280.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+          </div>
+
+          <!-- card list groups -->
+          <div class="col-lg-12 mt-5">
+            <div class="card border-0 rounded-5" style="background-color: #f5f7fd ;">
+              <div class="card-body ">
+                <div class="list-group list-group-horizontal bg-transparent d-flex   flex-md-row ">
+                  <div class="list-group-item align-content-center d-flex  gap-4 border-0 bg-transparent ">
+                    <i class="bi bi-speedometer fs-1 icon-style opacity-50"></i>
+                    <div class="d-flex flex-column">
+                      <h5 class="text-black">Unlimited KMs</h5>
+                      <p class="text-secondary ">Endless Km with no extra charge</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item align-content-centergap-4 d-flex gap-4 border-0 bg-transparent">
+                    <i class="bi bi-shield-lock fs-1 icon-style opacity-50"></i>
+                 
+                    <div class="d-flex flex-column">
+                      <h5 class="text-black">Unlimited KMs</h5>
+                      <p class="text-secondary ">Endless Km with no extra charge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 mt-5">
+            <span class="fw-bolder " style="color: #744fff;"><i class="bi bi-play-fill"></i> General Information</span>
+            <h1 class="my-3 text-black fw-bold">Know about our car service</h1>
+            <p class="my-4 text-secondary">Lorem pretium fermentum quam, sit amet cursus ante sollicitudin velen morbi consesua the miss sustion consation porttitor orci sit amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante sollicitudin velen fermen morbinetion consesua the risus consequation the porttiton</p>
+         
+              <a href="#" class="link-dark nav-link">
+                <i class="bi bi-check-circle-fill me-3 opacity-75" style="color:#744fff"></i>
+                 24/7 Roadside Assistance
+              </a>
+              <a href="#" class="link-dark nav-link">
+                <i class="bi bi-check-circle-fill me-3  opacity-75" style="color:#744fff"></i>
+                 Free concellation & Return 
+              </a>
+              <a href="#" class="link-dark nav-link">
+                <i class="bi bi-check-circle-fill me-3  opacity-75" style="color:#744fff" ></i>
+                Rent Now play when you arrive
+              </a>
+              
+          </div>
+        </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer mt-5">
+    <div class="container py-5">
+      <div class="footer-inner bg-dark text-light rounded-4 p-5">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <div class="d-flex align-items-center mb-3">
+              <a class="d-flex flex-nowrap nav-link align-items-end text-light" href="#">
+                <img class="py-1" style="width: 50px;" src="asset/img/logo-removebg.png" alt="logo">
+                <span class="ms-2 fw-semibold fs-3 text-nowrap">Rental Vehicles</span>
+              </a>
+            </div>
+            <p class="text-muted">Experience the ease and convenience of renting a car with Novaride.</p>
+            <h6 class="mt-4">Subscribe</h6>
+            <div class="d-flex gap-2 mt-3">
+              <a href="#" class="btn btn-outline-light rounded-circle social-btn"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="btn btn-outline-light rounded-circle social-btn"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="btn btn-outline-light rounded-circle social-btn"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 p-2">
+            <h5 class="ms-2 mt-3 fw-semibold fs-4 text-light">Legal Policy</h5>
+            <ul class="list-unstyled navbar-nav gap-0 mt-4 flex-column px-2">
+              <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 p-2">
+            <h5 class="ms-2 mt-3 fw-semibold fs-4 text-light">Quick Links</h5>
+            <ul class="list-unstyled navbar-nav gap-0 mt-4 flex-column px-2">
+              <li><a href="#" class="text-muted text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Service</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5>Give Feedback</h5>
+            <form class="mt-3">
+              <div class="mb-3">
+                <input type="email" class="form-control footer-input" placeholder="Your Email" />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control footer-input" rows="3" placeholder="Your Message"></textarea>
+              </div>
+              <button class="btn btn-outline-light rounded-pill px-4">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- Bootstrap JS Bundle -->
+<script src="asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- aos js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  <!-- carousel script -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var carouselEl = document.getElementById('carouselExampleIndicators');
+  if (!carouselEl) return;
+
+  // Initialize Bootstrap carousel to autoplay every 2000ms and not pause on hover
+  new bootstrap.Carousel(carouselEl, {
+    interval: 2000,
+    ride: 'carousel',
+    pause: false,
+    touch: true,
+    wrap: true
+  });
+});
+</script>
+
+</html>
