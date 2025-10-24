@@ -1,0 +1,55 @@
+
+.contact-form .form-control {
+  border-radius: 4px;
+  border: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #eee;
+  padding-left: 0;
+}
+.submit-purple {
+  background: #744fff;
+  border-color: #744fff;
+}
+.submit-purple:hover {
+  background: #6a3df0;
+  border-color: #6a3df0;
+}
+@media (max-width: 991px) {
+  .contact-left {
+    min-height: 320px;
+    padding: 2rem;
+  }
+  .contact-card {
+    padding: 1rem;
+  }
+}
+
+/* Map wrapper styles */
+.map-wrapper {
+  max-width: 1200px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  margin: 0 20px;
+}
+.map-wrapper iframe {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 520px;
+}
+.map-label {
+  display: inline-block;
+  color: #744fff;
+  font-weight: 700;
+}
+.map-label i {
+  margin-right: 6px;
+  font-size: 12px;
+  vertical-align: -1px;
+}
+@media (max-width: 767px) {
+  .map-wrapper iframe {
+    height: 360px;
+  }
+}
