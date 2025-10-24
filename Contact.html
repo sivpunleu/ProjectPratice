@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="asset/css/theme.css" />
+    <!-- Contact CSS -->
+    <link rel="stylesheet" href="asset/css/contact.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/bootstrap-5.3.7/css/bootstrap.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Contact</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-white border-bottom border-light sticky-top py-4 wow animate__slideInDown"
+      data-wow-duration="0.5s"
+      style="
+        visibility: visible;
+        animation-duration: 0.5s;
+        animation-name: slideInDown;
+      "
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-end" href="home.html">
+          <img
+            class="py-1 wow animate__zoomIn"
+            data-wow-duration="1s"
+            style="
+              width: 40px;
+              visibility: visible;
+              animation-duration: 1s;
+              animation-name: zoomIn;
+            "
+            src="asset/img/logo-removebg.png"
+            alt="logo"
+          />
+          <span class="ms-2 fw-semibold fs-4"
+            >Rental <span class="text-puple">Vehicles</span></span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Types of Vehicles
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item d-flex justify-content-between align-items-center"
+                    href="#"
+                  >
+                    <span>Motorbike</span>
+                    <i class="fa fa-bicycle text-muted" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex justify-content-between align-items-center"
+                    href="#"
+                  >
+                    <span>Car</span>
+                    <i class="fa fa-car text-muted" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex justify-content-between align-items-center"
+                    href="#"
+                  >
+                    <span>Van</span>
+                    <i class="fa fa-bus text-muted" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-primary px-4 py-2 rounded-pill text-capitalize position-relative btn-booking"
+                href="booking-rental.html"
+                >book a rental
+                <span
+                  class="badge pluss position-absolute top-0 end-0 translate-middle-y border border-1 bg-danger p-2 rounded-circle"
+                >
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- profile -->
+          <div class="dropdown ms-3">
+            <button
+              class="btn btn-square btn-user-profile btn-outline-primary rounded-circle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                class="user-profile rounded-circle img-fluid"
+                src="asset/img/user/09.jpg"
+                alt="profile"
+                style="width: 60px; height: 60px"
+              />
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end mt-2">
+              <li>
+                <a
+                  class="dropdown-item d-flex justify-content-between align-items-center"
+                  href="/setting-info"
+                  >Setting <i class="bi bi-gear float-end"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item d-flex justify-content-between align-items-center"
+                  href="/notification"
+                  >Notification <i class="bi bi-bell float-end"></i
+                ></a>
+              </li>
+              <li class="border-1 border-top border-secondary">
+                <a
+                  class="dropdown-item text-danger d-flex justify-content-between align-items-center"
+                  href="#logout"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#logout"
+                  >Log Out
+                  <img
+                    width="16px"
+                    class="float-end mt-1"
+                    src="assets/images/png/logout.png"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div class="container-fluid" style="max-width: 1400px !important;">
+          <div class="herobanner">
+            <div
+              class="title d-flex justify-content-center align-items-center flex-column"
+              style="height: 65vh"
+            >
+              <h1
+                class="text-white fw-bolder animate__animated animate__fadeInDown"
+                style="font-size: 64px"
+              >
+                Contact Us
+              </h1>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                  <li class="breadcrumb-item">
+                    <a class="nav-link fs-5 text-light fw-medium" href="home.html"
+                      >home</a
+                    >
+                  </li>
+                  <li
+                    class="breadcrumb-item text-primary fs-5 fw-medium active"
+                    aria-current="page"
+                  >
+                    Booking
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section class="contact-section py-5">
+        <div class="container">
+          <div class="contact-card bg-white rounded-4 p-4">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-6">
+              <div class="card bg-black rounded-5 bg-cover" style="background-image: url(asset/img/black-abstract-background.jpg);">
+                  <div class="card-body p-5">
+                    <h1 class="card-title text-light">Contact information</h1>
+                    <p class="load text-light mb-6 mt-3">Say something to start a live chat!</p>
+                    <div class="mb-4">
+                      <a href="tel:+885000000000" class="nav-link text-light"><i class="bi bi-telephone-outbound fs-2 me-3"></i> (+885) 00-0000-000 </a>
+                    </div>
+                    <div class="mb-4">
+                      <a href="mailto:example@gmail.com" class="nav-link text-light"><i class="bi bi-envelope-arrow-up fs-2 me-3"></i> example@gmail.com</a>
+                    </div>
+                    <div class="mb-6">
+                      <a href="#" class="nav-link text-light d-flex"><i class="bi bi-geo-alt  fs-2 me-3"></i> <span class="d-block">1234 Elm Street, Suite 567 <br> Springfield, United States</span></a>
+                    </div>
+                    <div class="d-flex gap-3 mt-5">
+                      <a href="#youtube-channel" class="btn btn-square btn-outline-light rounded-circle"><i class="bi bi-youtube"></i></a>
+                      <a href="#facebook-page" class="btn btn-square btn-outline-light rounded-circle"><i class="bi bi-facebook"></i></a>
+                      <a href="#twitter-social" class="btn btn-square btn-outline-light rounded-circle"><i class="bi bi-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="contact-form p-3">
+                  <form>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label">First Name</label>
+                        <input
+                          class="form-control"
+                          placeholder="Enter Your Name"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label">Last Name</label>
+                        <input
+                          class="form-control"
+                          placeholder="Enter Your Name"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input
+                          class="form-control"
+                          placeholder="Enter Your Email"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label">Phone</label>
+                        <input
+                          class="form-control"
+                          placeholder="Enter Your Phone"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label">Message</label>
+                        <textarea
+                          class="form-control"
+                          rows="6"
+                          placeholder="Enter Your Message"
+                        ></textarea>
+                      </div>
+                      <div class="col-12">
+                        <button
+                          class="btn btn-primary w-100 rounded-pill py-3 submit-purple"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Map section -->
+      <section class="map-section py-5">
+        <div class="container text-center" style="max-width: 1600px !important">
+          <p class="map-label mb-2"><i class="bi bi-play-fill"></i> Location</p>
+          <h2 class="fw-bold mb-4">How to reach our location</h2>
+          <div class="map-wrapper mx-auto">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6468.656030146308!2d104.92205015703311!3d11.567361764307712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095148fdcefea3%3A0xeef02689cbfb683f!2z4Z6c4Z6P4Z-S4Z6P4Z6n4Z6O4Z-S4Z6O4Z624Z6b4Z-E4Z6Y!5e1!3m2!1skm!2skh!4v1761030847683!5m2!1skm!2skh"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer mt-3">
+      <div class="container py-5">
+        <div class="footer-inner bg-dark text-light rounded-4 p-5">
+          <div class="row g-4">
+            <div class="col-lg-3">
+              <div class="d-flex align-items-center mb-3">
+                <a
+                  class="d-flex flex-nowrap nav-link align-items-end text-light"
+                  href="#"
+                >
+                  <img
+                    class="py-1"
+                    style="width: 50px"
+                    src="asset/img/logo-removebg.png"
+                    alt="logo"
+                  />
+                  <span class="ms-2 fw-semibold fs-3 text-nowrap"
+                    >Rental Vehicles</span
+                  >
+                </a>
+              </div>
+              <p class="text-muted">
+                Experience the ease and convenience of renting a car with
+                Novaride.
+              </p>
+              <h6 class="mt-4">Subscribe</h6>
+              <div class="d-flex gap-2 mt-3">
+                <a
+                  href="#"
+                  class="btn btn-outline-light rounded-circle social-btn"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-light rounded-circle social-btn"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-outline-light rounded-circle social-btn"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-2 p-2">
+              <h5 class="ms-2 mt-3 fw-semibold fs-4 text-light">
+                Legal Policy
+              </h5>
+              <ul class="list-unstyled navbar-nav gap-0 mt-4 flex-column px-2">
+                <li>
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 p-2">
+              <h5 class="ms-2 mt-3 fw-semibold fs-4 text-light">Quick Links</h5>
+              <ul class="list-unstyled navbar-nav gap-0 mt-4 flex-column px-2">
+                <li>
+                  <a href="#" class="text-muted text-decoration-none">home</a>
+                </li>
+                <li>
+                  <a href="AboutUs.html" class="text-muted text-decoration-none"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5>Give Feedback</h5>
+              <form class="mt-3">
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control footer-input"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control footer-input"
+                    rows="3"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button class="btn btn-outline-light rounded-pill px-4">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- Bootstrap JS Bundle -->
+  <script src="asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
