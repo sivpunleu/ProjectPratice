@@ -1,0 +1,253 @@
+.hero-banner {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 1400px;
+    height: 700px;
+    border-radius: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.hero-content {
+    position: absolute;
+    text-align: center;
+    justify-items: center;
+    z-index: 3;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.search-card {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    max-width: 1400px;
+    margin-top: 700px;
+    position: absolute;
+    z-index: 5;
+}
+
+.search-row {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.search-field {
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+.search-field select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #666;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.btn-search {
+    background: #7c3aed;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-search:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+}
+
+.change {
+    width: 350px;
+    height: 550px;
+    position: relative;
+    border-radius: 50px;
+    padding: 10px;
+    border: 1px solid rgb(199, 199, 199);
+    margin-right: 20px;
+}
+
+.changes {
+    width: 330px !important;
+    height: 450px !important;
+    position: absolute;
+    margin-top: 200px;
+    padding: 10px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.go {
+    margin-top: -0px;
+    width: 90px;
+    position: absolute;
+}
+
+.about {
+    background-color: #f8fcff;
+}
+
+.mt-50 {
+    margin-top: 100px;
+}
+
+.vehicle-content {
+    background-color: #00000066;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.arrow-btn {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 330px;
+    margin-left: 300px;
+    transition: all 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.667);
+    transition: 0.3s;
+}
+
+.vovo:hover .vehicle-content {
+    background: rgba(0, 0, 0, 0.689);
+
+}
+
+.vovo:hover .arrow-btn {
+    background: #6c63ff;
+    transform: rotate(45deg) scale(1.1);
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px #6c63ff;
+}
+
+.vovo:hover img {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.vovo img {
+    transition: transform 0.5s ease;
+}
+
+.vovo {
+    overflow: hidden;
+}
+
+.car-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.van{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    
+}
+
+
+.car-card:hover .van{
+    background: #000000;
+    transform: rotate(45deg) scale(1.0);
+    border-color: #ffffff;
+}
+.car-image {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.badge-soft {
+    background-color: #f2f2f4;
+    color: #555;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+.btn-nav {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    transition: all 0.2s;
+}
+
+.btn-nav:hover {
+    background: #6f42c1;
+    color: white;
+    border-color: #6f42c1;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+}
+
+.price small {
+    font-size: 13px;
+    color: #666;
+}
