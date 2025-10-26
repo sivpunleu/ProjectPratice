@@ -29,40 +29,43 @@
   .breadcrumb-item::before {
     color: white !important;
   }
-    /* Carousel indicator dots styled as primary-colored circles */
-    #carouselExampleIndicators .carousel-indicators {
-                      position: absolute;
-                      z-index: 10;
-                      bottom: 16px;
-                      left: 50%;
-                      transform: translateX(-50%);
-                      display: flex;
-                      gap: 8px;
-                      padding: 0;
-                      margin: 0;
-    }
+
+  /* Carousel indicator dots styled as primary-colored circles */
+  #carouselExampleIndicators .carousel-indicators {
+    position: absolute;
+    z-index: 10;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
 
   #carouselExampleIndicators .carousel-indicators button {
-                      width: 12px;
-                      height: 12px;
-                      border-radius: 50%;
-                      background-color: var(--bs-primary, #744fff);
-                      opacity: 0.6;
-                      border: none;
-                      transition: transform .18s ease, opacity .18s ease, box-shadow .18s ease;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--bs-primary, #744fff);
+    opacity: 0.6;
+    border: none;
+    transition: transform .18s ease, opacity .18s ease, box-shadow .18s ease;
   }
-   #carouselExampleIndicators .carousel-indicators button.active,
-   #carouselExampleIndicators .carousel-indicators button:focus {
-                      width: 14px;
-                      height: 14px;
-                      opacity: 1;
-                      box-shadow: 0 0 0 6px rgba(116, 79, 255, 0.12); /* subtle ring */
-    }
+
+  #carouselExampleIndicators .carousel-indicators button.active,
+  #carouselExampleIndicators .carousel-indicators button:focus {
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    box-shadow: 0 0 0 6px rgba(116, 79, 255, 0.12);
+    /* subtle ring */
+  }
+
   /* Remove default outline for mouse users but keep for keyboard accessibility */
-    #carouselExampleIndicators .carousel-indicators button:not(:focus-visible) {
-                      outline: none;
-    }
-                  
+  #carouselExampleIndicators .carousel-indicators button:not(:focus-visible) {
+    outline: none;
+  }
 </style>
 
 <body>
@@ -158,15 +161,17 @@
       <!-- START HEROBANNER  -->
       <div class="herobanner">
         <div class="title d-flex justify-content-center align-items-center flex-column" style="height:65vh;">
-          <h1 class="text-white fw-bolder animate__animated  animate__fadeInDown" style="font-size: 64px ;">Sedan Cars</h1>
+          <h1 class="text-white fw-bolder animate__animated  animate__fadeInDown" style="font-size: 64px ;">Sedan Cars
+          </h1>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item animate__animated animate__fadeInUp  fs-5 fw-medium"><a
                   class="breadcrumb-link text-white text-decoration-none" href="home.html">Home</a></li>
-              <li class="breadcrumb-item  animate__animated animate__fadeInUp  fs-5 fw-medium"> 
-                <a href="car.html" class="breadcrumb-item animate__animated animate__fadeInUp text-decoration-none  activec fs-5  fw-medium text-white">Cars</a>
+              <li class="breadcrumb-item  animate__animated animate__fadeInUp  fs-5 fw-medium">
+                <a href="car.html"
+                  class="breadcrumb-item animate__animated animate__fadeInUp text-decoration-none  activec fs-5  fw-medium text-white">Cars</a>
               </li>
-         
+
 
               <li class="breadcrumb-item animate__animated animate__fadeInUp  activec fs-5  fw-medium "
                 aria-current="page" style="color:#744fff;">Sedan</li>
@@ -180,64 +185,72 @@
       <section class="mt-5">
         <div class="row g-5 ">
           <div class=" col-lg-4">
-          <div class="card position-sticky top-0 bg-transparent   rounded-5 position-sticky py-3 "
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom" style="background-color: #f5f7fd !important;">
-            <div class="card-body p-5">
-              <p class=" d-flex justify-content-center align-items-center ">
-                <span class="fs-1 fw-bolder">$248</span>
-                /per Day
-              </p>
-              <hr class="border border-secondary my-4 opacity-25 border-1" style="color:aliceblue">
-              <div class="d-flex justify-content-between ">
-               <span class="text-secondary "><img src="asset/img/svg/icon-door.svg" alt="cardoor" class="me-2"> Doors</span>
-               <span class="text-secondary">4</span>
-              </div>
-              <div class="d-flex justify-content-between my-3 ">
-               <span class="text-secondary "><img src="asset/img/svg/icon-passengers.svg" alt="cardoor" class="me-2"> Panssengers</span>
-               <span class="text-secondary">2</span>
-              </div>
-              <div class="d-flex justify-content-between my-3 ">
-               <span class="text-secondary "><img src="asset/img/svg/icon-transmission.svg" alt="cardoor" class="me-2"> Transmission</span>
-               <span class="text-secondary">Auto</span>
-              </div>
-              <div class="d-flex justify-content-between my-3 ">
-               <span class="text-secondary "><img src="asset/img/svg/icon-age.svg" alt="cardoor" class="me-2"> Age</span>
-               <span class="text-secondary">6</span>
-              </div>
-               <div class="d-flex justify-content-between my-3 ">
-               <span class="text-secondary "><img src="asset/img/svg/icon-bags.svg" alt="cardoor" class="me-2"> Luggage</span>
-               <span class="text-secondary">1</span>
-              </div>
-              <div class="d-flex justify-content-between my-3 ">
-               <span class="text-secondary "><img src="asset/img/svg/icon-aircondition.svg" alt="cardoor" class="me-2">  Air Condition</span>
-               <span class="text-secondary">Yes</span>
-              </div>
-              <hr class="border border-secondary my-4 opacity-25 border-1" style="color:aliceblue">
-              
-              <!-- btn link to other page -->
-              <div class="d-flex  justify-content-center align-items-center my-3">
-                <a href="booking.html" class="btn btn-book py-2 px-4 rounded-5 fw-bolder text-white" style="background-color: #744fff;">Book Now</a>
-                <span class="px-3">OR</span>
-                <a href="#" class="btn btn-contaxt "><i class="fa-solid fa-comment-dots"></i></a>
+            <div class="card position-sticky top-0 bg-transparent   rounded-5 position-sticky py-3 " data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom" style="background-color: #f5f7fd !important;">
+              <div class="card-body p-5">
+                <p class=" d-flex justify-content-center align-items-center ">
+                  <span class="fs-1 fw-bolder">$248</span>
+                  /per Day
+                </p>
+                <hr class="border border-secondary my-4 opacity-25 border-1" style="color:aliceblue">
+                <div class="d-flex justify-content-between ">
+                  <span class="text-secondary "><img src="asset/img/svg/icon-door.svg" alt="cardoor" class="me-2">
+                    Doors</span>
+                  <span class="text-secondary">4</span>
+                </div>
+                <div class="d-flex justify-content-between my-3 ">
+                  <span class="text-secondary "><img src="asset/img/svg/icon-passengers.svg" alt="cardoor" class="me-2">
+                    Panssengers</span>
+                  <span class="text-secondary">2</span>
+                </div>
+                <div class="d-flex justify-content-between my-3 ">
+                  <span class="text-secondary "><img src="asset/img/svg/icon-transmission.svg" alt="cardoor"
+                      class="me-2"> Transmission</span>
+                  <span class="text-secondary">Auto</span>
+                </div>
+                <div class="d-flex justify-content-between my-3 ">
+                  <span class="text-secondary "><img src="asset/img/svg/icon-age.svg" alt="cardoor" class="me-2">
+                    Age</span>
+                  <span class="text-secondary">6</span>
+                </div>
+                <div class="d-flex justify-content-between my-3 ">
+                  <span class="text-secondary "><img src="asset/img/svg/icon-bags.svg" alt="cardoor" class="me-2">
+                    Luggage</span>
+                  <span class="text-secondary">1</span>
+                </div>
+                <div class="d-flex justify-content-between my-3 ">
+                  <span class="text-secondary "><img src="asset/img/svg/icon-aircondition.svg" alt="cardoor"
+                      class="me-2"> Air Condition</span>
+                  <span class="text-secondary">Yes</span>
+                </div>
+                <hr class="border border-secondary my-4 opacity-25 border-1" style="color:aliceblue">
+
+                <!-- btn link to other page -->
+                <div class="d-flex  justify-content-center align-items-center my-3">
+                  <a href="booking.html" class="btn btn-book py-2 px-4 rounded-5 fw-bolder text-white"
+                    style="background-color: #744fff;">Book Now</a>
+                  <span class="px-3">OR</span>
+                  <a href="#" class="btn btn-contaxt "><i class="fa-solid fa-comment-dots"></i></a>
+                </div>
+
               </div>
 
             </div>
-
-          </div>  
-        </div>
-        <div class="col-xl-8">
-          <div class="col-lg-12">
-              <div class="card rounded-5 " 
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom">
+          </div>
+          <div class="col-xl-8">
+            <div class="col-lg-12">
+              <div class="card rounded-5 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div id="carouselExampleIndicators" class="carousel slide">
-                  
+
                   <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
                   </div>
 
                   <div class="carousel-inner rounded-5">
@@ -254,216 +267,222 @@
                       <img src="asset/img/sedan/renault-laguna-6978128_1280.jpg" class="d-block w-100" alt="...">
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
-          </div>
-
-          <!-- card list groups -->
-          <div class="col-lg-12 mt-5">
-            <div class="card border-0 rounded-5" style="background-color: #f5f7fd ;">
-              <div class="card-body "
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-anchor-placement="top-bottom">
-                <div class="list-group list-group-horizontal bg-transparent d-flex   flex-md-row ">
-                  <div class="list-group-item align-content-center d-flex  gap-4 border-0 bg-transparent ">
-                    <i class="bi bi-speedometer fs-1 icon-style opacity-50"></i>
-                    <div class="d-flex flex-column" 
-                    >
-                      <h5 class="text-black" >Unlimited KMs</h5>
-                      <p class="text-secondary ">Endless Km with no extra charge</p>
-                    </div>
-                  </div>
-                  <div class="list-group-item align-content-centergap-4 d-flex gap-4 border-0 bg-transparent">
-                    <i class="bi bi-shield-lock fs-1 icon-style opacity-50"></i>
-                 
-                    <div class="d-flex flex-column">
-                      <h5 class="text-black">Unlimited KMs</h5>
-                      <p class="text-secondary ">Endless Km with no extra charge</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              
-
             </div>
-          </div>
 
-          <div class="col-lg-12 mt-5">
-            <span class="fw-bolder " style="color: #744fff;"><i class="bi bi-play-fill"></i> General Information</span>
-            <h1 class="my-3 text-black fw-bold"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">Know about our car service</h1>
-            <p class="my-4 text-secondary"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-center">Lorem pretium fermentum quam, sit amet cursus ante sollicitudin velen morbi consesua the miss sustion consation porttitor orci sit amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante sollicitudin velen fermen morbinetion consesua the risus consequation the porttiton</p>
-         
-              <a href="#" class="link-dark nav-link"
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom">
+            <!-- card list groups -->
+            <div class="col-lg-12 mt-5">
+              <div class="card border-0 rounded-5" style="background-color: #f5f7fd ;">
+                <div class="card-body " data-aos="fade-up" data-aos-duration="2000"
+                  data-aos-anchor-placement="top-bottom">
+                  <div class="list-group list-group-horizontal bg-transparent d-flex   flex-md-row ">
+                    <div class="list-group-item align-content-center d-flex  gap-4 border-0 bg-transparent ">
+                      <i class="bi bi-speedometer fs-1 icon-style opacity-50"></i>
+                      <div class="d-flex flex-column">
+                        <h5 class="text-black">Unlimited KMs</h5>
+                        <p class="text-secondary ">Endless Km with no extra charge</p>
+                      </div>
+                    </div>
+                    <div class="list-group-item align-content-centergap-4 d-flex gap-4 border-0 bg-transparent">
+                      <i class="bi bi-shield-lock fs-1 icon-style opacity-50"></i>
+
+                      <div class="d-flex flex-column">
+                        <h5 class="text-black">Unlimited KMs</h5>
+                        <p class="text-secondary ">Endless Km with no extra charge</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="col-lg-12 mt-5">
+              <span class="fw-bolder " style="color: #744fff;"><i class="bi bi-play-fill"></i> General
+                Information</span>
+              <h1 class="my-3 text-black fw-bold" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Know about
+                our car service</h1>
+              <p class="my-4 text-secondary" data-aos="fade-up" data-aos-anchor-placement="center-center">Lorem pretium
+                fermentum quam, sit amet cursus ante sollicitudin velen morbi consesua the miss sustion consation
+                porttitor orci sit amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante sollicitudin
+                velen fermen morbinetion consesua the risus consequation the porttiton</p>
+
+              <a href="#" class="link-dark nav-link" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <i class="bi bi-check-circle-fill me-3 opacity-75" style="color:#744fff"></i>
-                 24/7 Roadside Assistance
+                24/7 Roadside Assistance
               </a>
-              <a href="#" class="link-dark nav-link"
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom">
+              <a href="#" class="link-dark nav-link" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <i class="bi bi-check-circle-fill me-3  opacity-75" style="color:#744fff"></i>
-                 Free concellation & Return 
+                Free concellation & Return
               </a>
-              <a href="#" class="link-dark nav-link"
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom">
-                <i class="bi bi-check-circle-fill me-3  opacity-75" style="color:#744fff" ></i>
+              <a href="#" class="link-dark nav-link" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <i class="bi bi-check-circle-fill me-3  opacity-75" style="color:#744fff"></i>
                 Rent Now play when you arrive
               </a>
-                 
-          </div>
+
+            </div>
             <hr class="border border-1 my-5 border-secondary my-4 opacity-25 border-1" style="color:rgb(255, 255, 255)">
             <span class="fw-bolder " style="color: #744fff;"><i class="bi bi-play-fill"></i> Amenities</span>
             <h1 class="fw-bold my-3 ">Premium amenities and features</h1>
-            <ul class="row g-3 list-unstyled "
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">
-              <li class="col-6 col-md-4 col-lg-3">  
+            <ul class="row g-3 list-unstyled " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Music System
                 </a>
               </li>
-              <li class="col-6 col-md-4 col-lg-3">  
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Toolkit
                 </a>
               </li>
-              <li class="col-6 col-md-4 col-lg-3">  
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Abs System
                 </a>
               </li>
-              <li class="col-6 col-md-4 col-lg-3">  
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Bluetooth
                 </a>
               </li>
-              <li class="col-6 col-md-4 col-lg-3">  
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Full Boot Space
                 </a>
               </li>
-              <li class="col-6 col-md-4 col-lg-3">  
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Usb Charger
                 </a>
               </li>
-              <li class="col-6 col-md-4 col-lg-3">  
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Aux Input
                 </a>
               </li>
-              <li class="col-6 col-md-4 col-lg-3">  
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Spare Tyre
                 </a>
               </li>
-              <li class="col-6 col-md-4 col-lg-3">  
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Power Steering
                 </a>
               </li>
-              <li class="col-6 col-md-4 col-lg-3">  
+              <li class="col-6 col-md-4 col-lg-3">
                 <a href="#" class=" link-dark nav-link">
-                <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
+                  <i class="bi bi-check-circle-fill me-2 opacity-75" style="color:#744fff"></i>
                   Power Windows
                 </a>
               </li>
             </ul>
             <hr class="border border-1 my-5 border-secondary my-4 opacity-25 border-1" style="color:rgb(255, 255, 255)">
             <span class="fw-bolder " style="color: #744fff;"><i class="bi bi-play-fill"></i> Rental Conditions</span>
-            <h1 class="fw-bold my-3 "
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">Policies and agreement</h1>
+            <h1 class="fw-bold my-3 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">Policies and agreement
+            </h1>
             <!-- accordion start -->
-            <div class="accordion rounded-4" id="accordionExample"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Driver License Requiments
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal                      </div>
-                    </div>
+            <div class="accordion rounded-4" id="accordionExample" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Driver License Requiments
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Insurance and Coverage Polocy
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Insurance and Coverage Polocy
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Avaible Payment Methods
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Avaible Payment Methods
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header ">
-                      <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse04" aria-expanded="false" aria-controls="collapseThree">
-                       Concellation and Modificaion policy
-                      </button>
-                    </h2>
-                    <div id="collapse04" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse04" aria-expanded="false" aria-controls="collapseThree">
+                    Concellation and Modificaion policy
+                  </button>
+                </h2>
+                <div id="collapse04" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse05" aria-expanded="false" aria-controls="collapseThree">
-                        Smoking and Pet Policies
-                      </button>
-                    </h2>
-                    <div id="collapse05" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.                      </div>
-                    </div>
-                    
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse05" aria-expanded="false" aria-controls="collapseThree">
+                    Smoking and Pet Policies
+                  </button>
+                </h2>
+                <div id="collapse05" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse06" aria-expanded="false" aria-controls="collapseThree">
-                        The minimum age  Requiments
-                      </button>
-                    </h2>
-                    <div id="collapse06" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.                      </div>
-                    </div>
-                    
+                </div>
+
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse06" aria-expanded="false" aria-controls="collapseThree">
+                    The minimum age Requiments
+                  </button>
+                </h2>
+                <div id="collapse06" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
                   </div>
+                </div>
+
+              </div>
             </div>
             <!-- accordion End -->
           </div>
@@ -531,21 +550,21 @@
 <script>
   AOS.init();
 </script>
-  <!-- carousel script -->
+<!-- carousel script -->
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  var carouselEl = document.getElementById('carouselExampleIndicators');
-  if (!carouselEl) return;
+  document.addEventListener('DOMContentLoaded', function () {
+    var carouselEl = document.getElementById('carouselExampleIndicators');
+    if (!carouselEl) return;
 
-  // Initialize Bootstrap carousel to autoplay every 2000ms and not pause on hover
-  new bootstrap.Carousel(carouselEl, {
-    interval: 2000,
-    ride: 'carousel',
-    pause: false,
-    touch: true,
-    wrap: true
+    // Initialize Bootstrap carousel to autoplay every 2000ms and not pause on hover
+    new bootstrap.Carousel(carouselEl, {
+      interval: 2000,
+      ride: 'carousel',
+      pause: false,
+      touch: true,
+      wrap: true
+    });
   });
-});
 </script>
 
 </html>
