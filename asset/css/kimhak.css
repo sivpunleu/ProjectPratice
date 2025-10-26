@@ -1,0 +1,22 @@
+:root{
+  --bs-primary: #0d6efd;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-purple: #744fff;
+ 
+
+}
+
+.bg-form {
+  background-color: var(--bs-purple) !important;
+}
+
+.btn {
+  background-color: var(--bs-purple) !important;
+}
+
+
+
+.btn:hover {
+  background-color: black !important;
+}
+
