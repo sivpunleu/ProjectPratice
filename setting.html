@@ -1,0 +1,425 @@
+<!-- PROFILE.HTML - Main Profile Settings Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rental Vehicles – Profile Settings</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="stylesheet" href="asset/css/theme.css" />
+  <link rel="stylesheet" href="asset/css/profile.css" />
+  <link rel="stylesheet" href="asset/css/notification.css" />
+  <link rel="stylesheet" href="asset/css/changepassword.css" />
+<link rel="stylesheet" href="asset/css/setting.css"/>
+  <link rel="stylesheet" href="asset/bootstrap-5.3.7/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  
+</head>
+
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom border-light sticky-top py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-end" href="index.html">
+        <img class="py-1" style="width:40px" src="asset/img/logo-removebg.png" alt="Rental Vehicles logo" />
+        <span class="ms-2 fw-semibold fs-4">Rental <span class="text-primary">Vehicles</span></span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="vehicleTypes" role="button" data-bs-toggle="dropdown" 
+               aria-expanded="false" aria-haspopup="true">
+              Types of Vehicles
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="vehicleTypes">
+              <li>
+                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Motorbike</span>
+                  <i class="bi bi-bicycle text-muted" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Car</span>
+                  <i class="bi bi-car-front text-muted" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Van</span>
+                  <i class="bi bi-bus-front text-muted" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn btn-primary px-4 py-2 rounded-pill position-relative" href="/booking-rental" aria-label="Book a rental">
+              Book a rental
+              <span class="badge position-absolute top-0 end-0 translate-middle-y bg-danger p-2 rounded-circle">
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Profile Dropdown -->
+        <div class="dropdown ms-3">
+          <button class="btn btn-outline-primary rounded-circle p-0 overflow-hidden" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" aria-label="Open profile menu" style="width:60px;height:60px">
+            <img class="w-100 h-100 object-fit-cover" src="asset/img/user/09.jpg" alt="User profile" />
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end mt-2 shadow">
+            <li>
+              <a class="dropdown-item d-flex justify-content-between align-items-center active" href="profile.html">
+                Setting <i class="bi bi-gear"></i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex justify-content-between align-items-center" href="notification.html">
+                Notification <i class="bi bi-bell"></i>
+              </a>
+            </li>
+            <li class="border-top">
+              <a class="dropdown-item text-danger d-flex justify-content-between align-items-center" href="#" 
+                 role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                Log Out
+                <i class="bi bi-box-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="py-4 py-md-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Sidebar Navigation -->
+          <aside class="col-lg-3 col-md-4">
+            <div class="bg-white shadow-sm rounded-4 p-3 sticky-top" style="top:95px">
+              <h1 class="fs-4 fw-bold mb-3 text-dark">Settings</h1>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a href="profile.html" class="sidebar-link active d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none text-secondary fw-medium" aria-current="page">
+                    <i class="bi bi-person-circle fs-5" aria-hidden="true"></i>
+                    <span>Profile Info</span>
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="changepassword.html" class="sidebar-link d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none text-secondary fw-medium">
+                    <i class="bi bi-lock-fill fs-5" aria-hidden="true"></i>
+                    <span>Change Password</span>
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="sidebar-link d-flex align-items-center gap-3 p-3 rounded-3 text-decoration-none text-secondary fw-medium" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                    <i class="bi bi-box-arrow-right fs-5" aria-hidden="true"></i>
+                    <span>Log Out</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- Profile Content -->
+          <div class="col-lg-9 col-md-8">
+            <div class="rounded-4 shadow-sm bg-white overflow-hidden mb-4">
+              <header class="p-4 border-bottom">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-person-lines-fill fs-3 text-dark" aria-hidden="true"></i>
+                  <h2 class="mb-0 fs-3 fw-bold">Profile Info</h2>
+                </div>
+              </header>
+
+              <!-- Cover Photo and Avatar -->
+              <div class="p-4 p-md-5 pb-5">
+                <div class="position-relative d-flex flex-column align-items-center justify-content-center text-muted rounded-3 bg-light" style="height:220px">
+                  <i class="bi bi-image display-3 mb-2" aria-hidden="true"></i>
+                  <span class="fst-italic">No cover available</span>
+
+                  <button class="btn btn-light position-absolute top-0 end-0 m-3 rounded-3 shadow-sm" 
+                          style="width:40px;height:40px" title="Edit Cover Photo" aria-label="Edit cover photo">
+                    <i class="bi bi-pencil-fill" aria-hidden="true"></i>
+                  </button>
+
+                  <img src="https://rental-vehicles-project.netlify.app/assets/images/png/Secure%20data-rafiki.png"
+                       alt="Profile avatar" class="position-absolute border border-5 border-white rounded-circle shadow"
+                       style="width:130px;height:130px;bottom:-65px" />
+                </div>
+              </div>
+
+              <!-- Profile Information -->
+              <div class="p-4 p-md-5 pt-5 mt-4">
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Name</h5>
+                    <p class="text-muted mb-0">Yosef Sutton</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Gender</h5>
+                    <p class="text-muted mb-0">Male</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Date of Birth</h5>
+                    <p class="text-muted mb-0">2020-May-16</p>
+                  </div>
+                </div>
+
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Email</h5>
+                    <p class="text-muted mb-0">yosefsutton@example.com</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Phone</h5>
+                    <p class="text-muted mb-0">+855 12 345 678</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Country</h5>
+                    <p class="text-muted mb-0">Cambodia</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <h5 class="fw-semibold text-dark mb-2">Address</h5>
+                    <p class="text-muted mb-0">Str 51, Bovel Village, Bovel Commune, Bavel District, Battambang Province</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Driving License Section -->
+            <div class="rounded-4 shadow-sm bg-white mb-4">
+              <div class="p-4 border-bottom d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-credit-card-2-front fs-3 text-dark" aria-hidden="true"></i>
+                  <h2 class="mb-0 fs-3 fw-bold">Driving License</h2>
+                </div>
+                <button class="btn btn-light rounded-3 shadow-sm" style="width:40px;height:40px" aria-label="Edit driving license">
+                  <i class="bi bi-pencil-fill" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <div class="p-4 p-md-5">
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Full Name</h5>
+                    <p class="text-muted mb-0">Yosef Sutton</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Identity Document</h5>
+                    <p class="text-muted mb-0">******5678</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Issue Date</h5>
+                    <p class="text-muted mb-0">2022-05-01</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-semibold text-dark mb-2">Expiry Date</h5>
+                    <p class="text-muted mb-0">2032-05-01</p>
+                  </div>
+                  <div class="col-lg-8 col-md-6">
+                    <h5 class="fw-semibold text-dark mb-2">File</h5>
+                    <p class="text-muted mb-0">File Source</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Identity Document Section -->
+            <div class="rounded-4 shadow-sm bg-white">
+              <div class="p-4 border-bottom d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-credit-card-2-front fs-3 text-dark" aria-hidden="true"></i>
+                  <h2 class="mb-0 fs-3 fw-bold">Identity Document</h2>
+                </div>
+                <button class="btn btn-light rounded-3 shadow-sm" style="width:40px;height:40px" aria-label="Edit identity document">
+                  <i class="bi bi-pencil-fill" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <div class="p-4 p-md-5">
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Full Name</h5>
+                    <p class="text-muted mb-0">Yosef Sutton</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Date Of Birth</h5>
+                    <p class="text-muted mb-0">1990-06-15</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-semibold text-dark mb-2">Identity Document</h5>
+                    <p class="text-muted mb-0">******5678</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="fw-semibold text-dark mb-2">File</h5>
+                    <p class="text-muted mb-0">File Source</p>
+                  </div>
+                  <div class="col-lg-8 col-md-6">
+                    <h5 class="fw-semibold text-dark mb-2">Address</h5>
+                    <p class="text-muted mb-0">Str 51, Bovel Village, Bovel Commune, Bavel District, Battambang Province</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer mt-5">
+    <div class="container py-5">
+      <div class="footer-inner bg-dark text-light rounded-4 p-5">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <div class="d-flex align-items-center mb-3">
+              <a class="d-flex flex-nowrap nav-link align-items-end text-light" href="index.html">
+                <img class="py-1" style="width:50px" src="asset/img/logo-removebg.png" alt="Rental Vehicles logo">
+                <span class="ms-2 fw-semibold fs-3 text-nowrap">Rental Vehicles</span>
+              </a>
+            </div>
+            <p class="text-muted">Experience the ease and convenience of renting a car with Rental Vehicles.</p>
+            <h6 class="mt-4">Connect With Us</h6>
+            <div class="d-flex gap-2 mt-3">
+              <a href="#" class="btn btn-outline-light rounded-circle" style="width:40px;height:40px" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light rounded-circle" style="width:40px;height:40px" aria-label="Twitter">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light rounded-circle" style="width:40px;height:40px" aria-label="YouTube">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 p-2">
+            <h5 class="ms-2 mt-3 fw-semibold fs-4 text-light">Legal Policy</h5>
+            <ul class="list-unstyled navbar-nav gap-2 mt-4 flex-column px-2">
+              <li><a href="#" class="text-muted text-decoration-none">Terms of Service</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 p-2">
+            <h5 class="ms-2 mt-3 fw-semibold fs-4 text-light">Quick Links</h5>
+            <ul class="list-unstyled navbar-nav gap-2 mt-4 flex-column px-2">
+              <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Services</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Vehicle Types</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h5>Give Feedback</h5>
+            <form class="mt-3" novalidate>
+              <div class="mb-3">
+                <label for="footerEmail" class="visually-hidden">Your Email</label>
+                <input id="footerEmail" type="email" class="form-control footer-input py-2" placeholder="Your Email" required />
+              </div>
+              <div class="mb-3">
+                <label for="footerMsg" class="visually-hidden">Your Message</label>
+                <textarea id="footerMsg" class="form-control footer-input" rows="3" placeholder="Your Message" required></textarea>
+              </div>
+              <button class="btn btn-outline-light rounded-pill px-4" type="submit">Submit Feedback</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row mt-5 pt-4 border-top border-secondary">
+          <div class="col-12 text-center text-muted">
+            <p class="mb-0">&copy; 2025 Rental Vehicles. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enhanced Logout Modal -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-0 pt-4 px-4 pb-2">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body text-center px-4 px-md-5 pb-5">
+          <div class="bg-danger bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" 
+               style="width: 90px; height: 90px;">
+            <i class="bi bi-exclamation-triangle-fill text-danger" style="font-size: 2.5rem;" aria-hidden="true"></i>
+          </div>
+          
+          <h5 id="logoutLabel" class="modal-title fs-3 fw-bold text-dark mb-3">
+            Are you sure you want to Logout?
+          </h5>
+          
+          <p class="text-muted mb-4 pb-2">
+            You can always log back in at any time to access your account and bookings.
+          </p>
+          
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <button type="button" class="btn btn-light text-dark fw-semibold px-5 py-3 rounded-pill border-0 shadow-sm" 
+                    data-bs-dismiss="modal" style="min-width: 120px;">
+              NO
+            </button>
+            <button type="button" class="btn btn-primary fw-semibold px-5 py-3 rounded-pill border-0 shadow-sm" 
+                    onclick="handleLogout()" style="min-width: 120px;">
+              YES
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function handleLogout() {
+      const modalElement = document.getElementById('logoutModal');
+      const modalInstance = bootstrap.Modal.getInstance(modalElement);
+      
+      if (modalInstance) {
+        modalInstance.hide();
+      }
+      
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 300);
+    }
+  </script>
+</body>
+</html>
